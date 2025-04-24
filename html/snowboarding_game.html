@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snowboard Dodger</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: sans-serif;
+      background: linear-gradient(to bottom, #e0f7fa, #80deea);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    canvas {
+      border: 3px solid #333;
+      background: #f0f8ff;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Snowboard Dodger</h1>
+  <h2>Use your arrow keys to dodge the snowballs!</h2>
+  <canvas id="gameCanvas" width="400" height="600"></canvas>
+
+  <script>
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+
+    const player = {
+      x: 175,
+      y: 500,
+      width: 50,
+      height: 50,
+      color: '#1e88e5',
+      speed: 5,
+    };
+
+    const obstacles = [];
+    let score = 0;
+    let gameOver = false;
+
+    function drawPlayer() {
+      ctx.fillStyle = player.color;
+      ctx.fillRect(player.x, player.y, player.width, player.height);
+    }
+
+    function drawObstacle(obstacle) {
+      ctx.fillStyle = 'white';
+      ctx.fillRect(obstacle.x, obstacle.y, obstacle.width, obstacle.height);
+
+      ctx.strokeStyle = 'black';         // Set the border color
+      ctx.lineWidth = 1;                 // Set the border thickness
+      ctx.strokeRect(obstacle.x, obstacle.y, obstacle.width, obstacle.height);
+    }
+
+    function createObstacle() {
+      const width = 50;
+      const height = 50;
+      const x = Math.random() * (canvas.width - width);
+      obstacles.push({ x, y: -height, width, height });
+    }
+
+    function moveObstacles() {
+      for (let obs of obstacles) {
+        obs.y += 4;
+      }
+    }
+
+    function checkCollision(a, b) {
+      return (
+        a.x < b.x + b.width &&
+        a.x + a.width > b.x &&
+        a.y < b.y + b.height &&
+        a.y + a.height > b.y
+      );
+    }
+
+    function drawScore() {
+      ctx.fillStyle = '#000';
+      ctx.font = '20px Arial';
+      ctx.fillText(`Score: ${score}`, 10, 30);
+    }
+
+    function updateGame() {
+      if (gameOver) return;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      drawPlayer();
+      moveObstacles();
+
+      for (let obs of obstacles) {
+        drawObstacle(obs);
+        if (checkCollision(player, obs)) {
+          gameOver = true;
+          alert('Game Over! Your Score: ' + score);
+        }
+      }
+
+      drawScore();
+      score++;
+
+      requestAnimationFrame(updateGame);
+    }
+
+    setInterval(createObstacle, 1500);
+    updateGame();
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft' && player.x > 0) {
+        player.x -= player.speed;
+      } else if (e.key === 'ArrowRight' && player.x + player.width < canvas.width) {
+        player.x += player.speed;
+      }
+    });
+  </script>
+
+  <br>
+  <p><a href="scratch.html">Back to scratch page</a></p>
+</body>
+</html>

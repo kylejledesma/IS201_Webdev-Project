@@ -1,0 +1,560 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='SnowboardDataset' path='/workbooks' revision='1.6' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Snowboard2 (snowboarding_stats)' inline='true' name='federated.0svzrc30xbiky214m0noi0enpa95' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='snowboarding_stats' name='excel-direct.0v05nyf1jv6dc60zuvimn1ygp452'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Kyle/Desktop/IS201/snowboarding_stats.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0v05nyf1jv6dc60zuvimn1ygp452' name='Snowboard2' table='[Snowboard2$]' type='table'>
+          <columns gridOrigin='A1:J392:no:A1:J392:0' header='yes' outcome='2'>
+            <column datatype='string' name='Brand' ordinal='0' />
+            <column datatype='string' name='Model' ordinal='1' />
+            <column datatype='string' name='Riding Style' ordinal='2' />
+            <column datatype='string' name='Riding Level' ordinal='3' />
+            <column datatype='string' name='Shape' ordinal='4' />
+            <column datatype='string' name='Camber Profile' ordinal='5' />
+            <column datatype='string' name='Stance' ordinal='6' />
+            <column datatype='string' name='Flex' ordinal='7' />
+            <column datatype='integer' name='Price($)' ordinal='8' />
+            <column datatype='string' name='Powder' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Snowboard2]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:J392:no:A1:J392:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Brand</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Brand]</local-name>
+            <parent-name>[Snowboard2]</parent-name>
+            <remote-alias>Brand</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Model</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Model]</local-name>
+            <parent-name>[Snowboard2]</parent-name>
+            <remote-alias>Model</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Riding Style</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Riding Style]</local-name>
+            <parent-name>[Snowboard2]</parent-name>
+            <remote-alias>Riding Style</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Riding Level</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Riding Level]</local-name>
+            <parent-name>[Snowboard2]</parent-name>
+            <remote-alias>Riding Level</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shape</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Shape]</local-name>
+            <parent-name>[Snowboard2]</parent-name>
+            <remote-alias>Shape</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Camber Profile</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Camber Profile]</local-name>
+            <parent-name>[Snowboard2]</parent-name>
+            <remote-alias>Camber Profile</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stance</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Stance]</local-name>
+            <parent-name>[Snowboard2]</parent-name>
+            <remote-alias>Stance</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Flex</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Flex]</local-name>
+            <parent-name>[Snowboard2]</parent-name>
+            <remote-alias>Flex</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price($)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Price($)]</local-name>
+            <parent-name>[Snowboard2]</parent-name>
+            <remote-alias>Price($)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Powder</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Powder]</local-name>
+            <parent-name>[Snowboard2]</parent-name>
+            <remote-alias>Powder</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Avg_Price' datatype='real' name='[Calculation_1152077079793422337]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Price($)])' />
+      </column>
+      <column caption='Snowboard2' datatype='table' name='[__tableau_internal_object_id__].[Snowboard2_30D62221930E453CBE4E09D29F2E6139]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Kyle/AppData/Local/Temp/TableauTemp/#TableauTemp_1rpguh71hbvipw13kpa6z0f73wfn.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Brand</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Brand]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Brand</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Snowboard2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Model</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Model]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Model</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Snowboard2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>390</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Riding Style</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Riding Style]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Riding Style</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Snowboard2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Riding Level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Riding Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Riding Level</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Snowboard2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Shape</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Shape]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Shape</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Snowboard2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Camber Profile</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Camber Profile]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Camber Profile</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Snowboard2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Stance</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Stance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Stance</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Snowboard2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Flex</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Flex]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Flex</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Snowboard2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Price($)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Price($)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Price($)</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Snowboard2</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>65</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Powder</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Powder]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Powder</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Snowboard2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Brand' />
+        <field-sort-custom-order field='Model' />
+        <field-sort-custom-order field='Riding Style' />
+        <field-sort-custom-order field='Riding Level' />
+        <field-sort-custom-order field='Shape' />
+        <field-sort-custom-order field='Camber Profile' />
+        <field-sort-custom-order field='Stance' />
+        <field-sort-custom-order field='Flex' />
+        <field-sort-custom-order field='Price($)' />
+        <field-sort-custom-order field='Calculation_1152077079793422337' />
+        <field-sort-custom-order field='Powder' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='Snowboard2' id='Snowboard2_30D62221930E453CBE4E09D29F2E6139'>
+            <properties context=''>
+              <relation connection='excel-direct.0v05nyf1jv6dc60zuvimn1ygp452' name='Snowboard2' table='[Snowboard2$]' type='table'>
+                <columns gridOrigin='A1:J392:no:A1:J392:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Brand' ordinal='0' />
+                  <column datatype='string' name='Model' ordinal='1' />
+                  <column datatype='string' name='Riding Style' ordinal='2' />
+                  <column datatype='string' name='Riding Level' ordinal='3' />
+                  <column datatype='string' name='Shape' ordinal='4' />
+                  <column datatype='string' name='Camber Profile' ordinal='5' />
+                  <column datatype='string' name='Stance' ordinal='6' />
+                  <column datatype='string' name='Flex' ordinal='7' />
+                  <column datatype='integer' name='Price($)' ordinal='8' />
+                  <column datatype='string' name='Powder' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Cost of Snowboards per Riding Level'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Snowboard2 (snowboarding_stats)' name='federated.0svzrc30xbiky214m0noi0enpa95' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0svzrc30xbiky214m0noi0enpa95'>
+            <column datatype='integer' name='[Price($)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Riding Level]' role='dimension' type='nominal' />
+            <column-instance column='[Price($)]' derivation='None' name='[none:Price($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Riding Level]' derivation='None' name='[none:Riding Level:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <reference-line axis-column='[federated.0svzrc30xbiky214m0noi0enpa95].[none:Price($):qk]' enable-instant-analytics='true' formula='min' id='refline1' label-type='automatic' scope='per-table' value-column='[federated.0svzrc30xbiky214m0noi0enpa95].[none:Price($):qk]' z-order='1' />
+            <reference-line axis-column='[federated.0svzrc30xbiky214m0noi0enpa95].[none:Price($):qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline2' label-type='none' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0svzrc30xbiky214m0noi0enpa95].[none:Price($):qk]' z-order='2' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0svzrc30xbiky214m0noi0enpa95].[none:Price($):qk]</rows>
+        <cols>[federated.0svzrc30xbiky214m0noi0enpa95].[none:Riding Level:nk]</cols>
+      </table>
+      <simple-id uuid='{458A41CA-D675-4237-B990-8F59F5818CBB}' />
+    </worksheet>
+    <worksheet name='Riding Style'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Snowboard2 (snowboarding_stats)' name='federated.0svzrc30xbiky214m0noi0enpa95' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0svzrc30xbiky214m0noi0enpa95'>
+            <column datatype='string' name='[Riding Level]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Riding Style]' role='dimension' type='nominal' />
+            <column-instance column='[Riding Level]' derivation='Count' name='[cnt:Riding Level:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Riding Style]' derivation='None' name='[none:Riding Style:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0svzrc30xbiky214m0noi0enpa95].[cnt:Riding Level:qk]' />
+              <text column='[federated.0svzrc30xbiky214m0noi0enpa95].[none:Riding Style:nk]' />
+              <color column='[federated.0svzrc30xbiky214m0noi0enpa95].[none:Riding Style:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3454949F-106A-46C6-B0B8-9B8416A4BEC0}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='44'>
+    <window class='worksheet' maximized='true' name='Riding Style'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0svzrc30xbiky214m0noi0enpa95].[none:Riding Style:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{42CE722C-A974-41DF-B79A-170FC425B649}' />
+    </window>
+    <window class='worksheet' name='Cost of Snowboards per Riding Level'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FD31B5D9-5D03-45DE-862D-26CEFD684A78}' />
+    </window>
+  </windows>
+</workbook>

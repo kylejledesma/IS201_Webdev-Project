@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-style: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-bottom: 1rem;
+  }
+
+  h2, h3, h4, p, ul, li, ol {
+    color: #1a1a1a;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    list-style-position: inside;
+  }
+
+  .content a {
+    display: inline-block;
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  .container {
+    /* max-width: 800px; */
+    width: 92%;
+    margin: 0 auto;
+    background-color: #fff;
+    /* padding: 2rem; */
+    border: 2px solid red;
+    /* border-radius: 12px; */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .emphasizedText {
+    font-style: italic;
+    font-weight: normal;
+    color: black;
+  }
+  
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    max-height: 25%;
+  }  
+  
+  /* HEADER */
+  .header {
+    background-color: #39332E;
+    color: white;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 0;
+    /* Added to anchor the header tab */
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    right: 0;
+    /* z-index: 1000; */
+  }
+
+  .header span {
+    line-height: 0px;
+    display: block; /* or inline-block if you want it beside the title */
+    font-size: 18px;
+    font-style: italic;
+    color: whitesmoke;
+    margin-top: 5px;
+  }
+
+  /* NAV BAR */
+  nav {
+    background-color: #E7E7E7;
+    padding: 10px;
+    overflow: hidden;
+    text-align: center;
+    height: 50px;
+    /* Added to anchor the nav tab */
+    /* position: fixed; */
+    top: 150px; /* offset by header height */
+    left: 0;
+    right: 0;
+    z-index: 999;
+    /* Added for spacing on the nav tab */
+    display: flex;
+    justify-content: space-around; /* Evenly distribute space around items */
+    align-items: center;
+  }
+
+  nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    background-color: #ccc;
+  }
+
+  /* PAGE STRUCTURE */
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .mainbody {
+    background-color: whitesmoke;
+    flex: 1;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* margin-bottom: 50px; */
+  }
+  
+  /* FOOTER */
+  .footer {
+    /* position: fixed; */
+    bottom: 0;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 0.9rem;
+    background-color: #39332E;
+    color: white;
+  }
+
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    background-color: whitesmoke;
+  }
+  
+  .video-container iframe {
+    width: 75vw;
+    height: 75vh;
+    max-width: 75%;
+    max-height: 75%;
+    border: none;
+  }
+  
+  .tableau-wrapper {
+    width: 50vw;               /* 75% of the viewport width */
+    height: 50vh;              /* 75% of the viewport height */
+    /* margin: 0 auto;            center horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    margin-top: 1rem; /* or more, like 2rem */
+    max-width: 75vw;
+    max-height: 75vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .tableau-wrapper iframe {
+    width: 75%;
+    height: 75%;
+    border: none;
+    max-width: 100%;
+  }
+  

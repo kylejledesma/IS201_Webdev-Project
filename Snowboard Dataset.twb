@@ -1,0 +1,819 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Snowboard2 (snowboarding_stats)' inline='true' name='federated.0svzrc30xbiky214m0noi0enpa95' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='snowboarding_stats' name='excel-direct.0v05nyf1jv6dc60zuvimn1ygp452'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Kyle/Desktop/IS201/snowboarding_stats.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0v05nyf1jv6dc60zuvimn1ygp452' name='Snowboard2' table='[Snowboard2$]' type='table'>
+          <columns gridOrigin='A1:J392:no:A1:J392:0' header='yes' outcome='2'>
+            <column datatype='string' name='Brand' ordinal='0' />
+            <column datatype='string' name='Model' ordinal='1' />
+            <column datatype='string' name='Riding Style' ordinal='2' />
+            <column datatype='string' name='Riding Level' ordinal='3' />
+            <column datatype='string' name='Shape' ordinal='4' />
+            <column datatype='string' name='Camber Profile' ordinal='5' />
+            <column datatype='string' name='Stance' ordinal='6' />
+            <column datatype='string' name='Flex' ordinal='7' />
+            <column datatype='integer' name='Price($)' ordinal='8' />
+            <column datatype='string' name='Powder' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Snowboard2]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:J392:no:A1:J392:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Brand</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Brand]</local-name>
+            <parent-name>[Snowboard2]</parent-name>
+            <remote-alias>Brand</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Model</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Model]</local-name>
+            <parent-name>[Snowboard2]</parent-name>
+            <remote-alias>Model</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Riding Style</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Riding Style]</local-name>
+            <parent-name>[Snowboard2]</parent-name>
+            <remote-alias>Riding Style</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Riding Level</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Riding Level]</local-name>
+            <parent-name>[Snowboard2]</parent-name>
+            <remote-alias>Riding Level</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shape</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Shape]</local-name>
+            <parent-name>[Snowboard2]</parent-name>
+            <remote-alias>Shape</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Camber Profile</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Camber Profile]</local-name>
+            <parent-name>[Snowboard2]</parent-name>
+            <remote-alias>Camber Profile</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stance</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Stance]</local-name>
+            <parent-name>[Snowboard2]</parent-name>
+            <remote-alias>Stance</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Flex</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Flex]</local-name>
+            <parent-name>[Snowboard2]</parent-name>
+            <remote-alias>Flex</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price($)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Price($)]</local-name>
+            <parent-name>[Snowboard2]</parent-name>
+            <remote-alias>Price($)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Powder</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Powder]</local-name>
+            <parent-name>[Snowboard2]</parent-name>
+            <remote-alias>Powder</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Avg_Price' datatype='real' name='[Calculation_1152077079793422337]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Price($)])' />
+      </column>
+      <column caption='Snowboard2' datatype='table' name='[__tableau_internal_object_id__].[Snowboard2_30D62221930E453CBE4E09D29F2E6139]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Kyle/AppData/Local/Temp/TableauTemp/#TableauTemp_1rpguh71hbvipw13kpa6z0f73wfn.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/17/2025 03:01:07 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Brand</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Brand]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Brand</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Snowboard2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Model</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Model]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Model</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Snowboard2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>390</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Riding Style</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Riding Style]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Riding Style</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Snowboard2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Riding Level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Riding Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Riding Level</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Snowboard2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Shape</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Shape]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Shape</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Snowboard2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Camber Profile</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Camber Profile]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Camber Profile</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Snowboard2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Stance</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Stance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Stance</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Snowboard2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Flex</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Flex]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Flex</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Snowboard2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Price($)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Price($)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Price($)</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Snowboard2</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>65</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Powder</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Powder]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Powder</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Snowboard2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Snowboard2_30D62221930E453CBE4E09D29F2E6139]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Brand' />
+        <field-sort-custom-order field='Model' />
+        <field-sort-custom-order field='Riding Style' />
+        <field-sort-custom-order field='Riding Level' />
+        <field-sort-custom-order field='Shape' />
+        <field-sort-custom-order field='Camber Profile' />
+        <field-sort-custom-order field='Stance' />
+        <field-sort-custom-order field='Flex' />
+        <field-sort-custom-order field='Price($)' />
+        <field-sort-custom-order field='Calculation_1152077079793422337' />
+        <field-sort-custom-order field='Powder' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='Snowboard2' id='Snowboard2_30D62221930E453CBE4E09D29F2E6139'>
+            <properties context=''>
+              <relation connection='excel-direct.0v05nyf1jv6dc60zuvimn1ygp452' name='Snowboard2' table='[Snowboard2$]' type='table'>
+                <columns gridOrigin='A1:J392:no:A1:J392:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Brand' ordinal='0' />
+                  <column datatype='string' name='Model' ordinal='1' />
+                  <column datatype='string' name='Riding Style' ordinal='2' />
+                  <column datatype='string' name='Riding Level' ordinal='3' />
+                  <column datatype='string' name='Shape' ordinal='4' />
+                  <column datatype='string' name='Camber Profile' ordinal='5' />
+                  <column datatype='string' name='Stance' ordinal='6' />
+                  <column datatype='string' name='Flex' ordinal='7' />
+                  <column datatype='integer' name='Price($)' ordinal='8' />
+                  <column datatype='string' name='Powder' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Cost of Snowboards per Riding Level'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Snowboard2 (snowboarding_stats)' name='federated.0svzrc30xbiky214m0noi0enpa95' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0svzrc30xbiky214m0noi0enpa95'>
+            <column datatype='integer' name='[Price($)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Riding Level]' role='dimension' type='nominal' />
+            <column-instance column='[Price($)]' derivation='None' name='[none:Price($):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Riding Level]' derivation='None' name='[none:Riding Level:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <reference-line axis-column='[federated.0svzrc30xbiky214m0noi0enpa95].[none:Price($):qk]' enable-instant-analytics='true' formula='min' id='refline1' label-type='automatic' scope='per-table' value-column='[federated.0svzrc30xbiky214m0noi0enpa95].[none:Price($):qk]' z-order='2' />
+            <reference-line axis-column='[federated.0svzrc30xbiky214m0noi0enpa95].[none:Price($):qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline2' label-type='none' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0svzrc30xbiky214m0noi0enpa95].[none:Price($):qk]' z-order='3' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0svzrc30xbiky214m0noi0enpa95].[none:Price($):qk]</rows>
+        <cols>[federated.0svzrc30xbiky214m0noi0enpa95].[none:Riding Level:nk]</cols>
+      </table>
+      <simple-id uuid='{458A41CA-D675-4237-B990-8F59F5818CBB}' />
+    </worksheet>
+    <worksheet name='Riding Style'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Snowboard2 (snowboarding_stats)' name='federated.0svzrc30xbiky214m0noi0enpa95' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0svzrc30xbiky214m0noi0enpa95'>
+            <column datatype='string' name='[Riding Level]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Riding Style]' role='dimension' type='nominal' />
+            <column-instance column='[Riding Level]' derivation='Count' name='[cnt:Riding Level:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Riding Style]' derivation='None' name='[none:Riding Style:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0svzrc30xbiky214m0noi0enpa95].[cnt:Riding Level:qk]' />
+              <text column='[federated.0svzrc30xbiky214m0noi0enpa95].[none:Riding Style:nk]' />
+              <color column='[federated.0svzrc30xbiky214m0noi0enpa95].[none:Riding Style:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3454949F-106A-46C6-B0B8-9B8416A4BEC0}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Riding Style'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0svzrc30xbiky214m0noi0enpa95].[none:Riding Style:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0svzrc30xbiky214m0noi0enpa95].[none:Riding Level:nk]</field>
+            <field>[federated.0svzrc30xbiky214m0noi0enpa95].[none:Riding Style:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{42CE722C-A974-41DF-B79A-170FC425B649}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Cost of Snowboards per Riding Level'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0svzrc30xbiky214m0noi0enpa95].[none:Price($):qk]</field>
+            <field>[federated.0svzrc30xbiky214m0noi0enpa95].[none:Riding Level:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FD31B5D9-5D03-45DE-862D-26CEFD684A78}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Cost of Snowboards per Riding Level' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAASBUlEQVR4nO3daXCU933A8e/z7LOHtKv7PpBACJA4xGnAxtiAbWyTxI3tuk7aJG3SK02b
+      ceJpO5PJZMYzaaYv2k7buIeTupm0iZNMLsexY4xjCLWNOcQhxC0kBDpW96600t7P0RcQgQJO
+      ImCR4P/7vIJH0urR7vPV7mr3+f01x3EchFCQpmmaPtM7IcRMkgCE0iQAoTQJQChNAphRFuGB
+      Prq7u+nu6SU8HsdxHIgHef5f/5eIaV/xuSYHXv8Be04PEL5wmBe/vYPUNL+bY9uMDPaTsn/z
+      5/4msbFzfPO/XyV54xc1oySAGTXOC198lr/4q2d49tnP87m/eY5jwQgYflasXIxnyq3jcOHE
+      Yc4NRPDmlrK0sXbaN56ZnOAfv/As56M3vufp+DD73mvFvPGLmlHGTO+A8rIq+eI/f4F1tTm8
+      9sJzbH/7JEs/PId9rW2s37CKdHSEV777TQ51hpgIBlm7FuKjQVrao6xfXcOr3/4B5ARoOXiI
+      sqYH+cTjm7AjvXz/pZc4M5hm3YYt/M7DG9C0a3/76FAn3/vOd+mMeHj8Ix9jUSDMD3af5emn
+      PkSW1c9/fH0nn/j0R+ht3s5Lr+6hpHEDn3z6A7f2OsoguQeYaXaKC+1nON56hCNtg1RWFKOl
+      x9l38Di27fDu97/Km50uHn5oC8WBi7+vEqNBjpw8D5i0H9zDgbMh1t2zkndf+wnd4Ql+8rV/
+      4ES0kK0P3MvOY3287ws9VoyXv/ECQaOWtfP9vPj1bxD35nJm/x6Co3EGTxygPQba4DG+/J+v
+      cfcDW0mdeJWXdp68RVdO5kkAMy0V4sff/Hee/esv4V/zNE/cU8eVv6wPHz3LJz/zl2zadB+L
+      a0qv/vqcUp546vfY+ugWar0GsfQgRzoMPvNnH2fzps24XK73/dbmRIhjvSGWL21gzsJGjFiI
+      UCqP9XU6zW0DHD7QzMp16+k9sZ/culVUFheyZtViTpw6dfOvhxkiAcw0Xzmf//I/8aU//SDB
+      cx3EzanPUD2Gw8BgGMtMMRFL/BYXaOB2YgyEJzBTMX7dC/2620OW7jA0HMZ0snnsqQ9TEvCw
+      av1dnNr/C945Feee5VXk5OYxOtxPNJkiq2YNH9my/AZ/6NlDngPMBpqbjU/+CcHn/46vfuOn
+      /O3vN0x+6MFt23ju7z/LG2UVJIeCbNn0my4sn0ceWsC/fPFzFJaWQ+W6KR9NTHTx3Gf/mCyX
+      j8c//Tke2XQXL7z8Ld4z3HjKF9LYtJrqJWuIPv8MY7WPUpXjw7t8C4u/t5MXv/YCLpebFQ//
+      AUsrfDf7WpgRmrwXaCaZBC8EyS2vJOA1SMdGOdcbpramlJ7eMHXzqtCw6O3sIK5lk+cFPaeE
+      XD1OcNRiblUB/T195JSU4/dC7/kgBZWVJMcGGB6JYDkW//N/Qb7y51vRNXBsi65zp5lIArgo
+      ra6lKOCir7uLsViavOIKKkry0DWbYGcHVnYp1WX5aEByIkRndz+4vFTX1OJzJejpiTBnXiXv
+      /yBrdtM0TbutA7BtG12XR3G/at8b3+FoVxTMKE1bP8H6+kLe549ASrvtA0in07jd7pneDXGb
+      kneDCuVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVJAEJp
+      EoBQmgQglCYBCKVJAEJpEoBQmgQglCYBCKVlfDCWlY5zoauH8poFZLuhv/Mk5/pGJz+eU1LD
+      kvpqnFSE1qMnwF/GssV1GBrYVorO08cZSbhpWNJIrk/meImbK6P3ABMDnezc/R6tLYcYuzRI
+      vqBsDo2NjTQ2NlKVFePcYBxI8eYrr5NbXY8/1c2u/afBsTi1dydBK4+qQti9cw8JK5N7K1SU
+      0QCyiqrYtHkzc8tyJrd5s3MoKCigoCCXjq4I65bXQqidaPEy5leWUL90LfH+DhLJKB2jOuuW
+      1VE1dwnVgQl6Q/FM7q64zTiOw9meEb7yrXd4/kcHGInEpn0ZGX1M4TI87zs2L9Z3inj+Qkr8
+      buKDYXz5cwHQXQaBtEnYTOMYLjyaBmjkZmcxFo1hF3mxrIt3BZZl/drhr+LOljIt/uvVw5zp
+      HgHA69b5o0eapnUZM/Sg2ubQkXaa7nkEl6bhchk49qUD2XGwXRpuTePKVR0sx8HQXWiahmEY
+      lz7VkclwCnPQMa3L07Qtm2kfDzMSQGK4nZBRxd25XgC8FTXEDrXhrK7CSkcZN3wUeX34kjFC
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Riding Style' width='192'>
+      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
+      2+IuNgAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
